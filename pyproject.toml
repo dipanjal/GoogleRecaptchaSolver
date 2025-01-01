@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+    "setuptools>=65.5.0",
+    "wheel~=0.37.1"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google_captcha_solver"
+description = "A python library to solve google reCAPTCHA"
+requires-python = ">=3.9"
+authors = [
+    {name = "Dipanjal Maitra", email = "dipanjalmaitra@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydub==0.25.1",
+    "SpeechRecognition==3.12.0",
+    "selenium==4.27.1",
+]
+dynamic = ["version", "readme"]
+
+[project.urls]
+homepage = "https://github.com/dipanjal/GoogleRecaptchaSolver"
+
+[tool.setuptools.dynamic]
+version = {file = ".app-version"}
+readme = {file = "README.md"}
