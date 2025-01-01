@@ -1,0 +1,1 @@
+from google_captcha_solver.recaptcha_solver_v2 import RecaptchaSolver
